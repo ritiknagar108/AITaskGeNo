@@ -3,6 +3,7 @@ const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 
 exports.register = async (req, res) => {
+  console.log('Register endpoint hit', req.body);
   try {
     const { name, email, password } = req.body;
 
@@ -31,6 +32,7 @@ exports.register = async (req, res) => {
 };
 
 exports.login = async (req, res) => {
+  console.log('Login endpoint hit', req.body);
   try {
     const { email, password } = req.body;
 
