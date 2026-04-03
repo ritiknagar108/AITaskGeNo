@@ -1,0 +1,80 @@
+.analytics-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.analytics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.analytics-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.analytics-card h3 {
+  color: #2d3748;
+  margin: 0 0 1rem 0;
+}
+
+.stat-large {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #667eea;
+  margin-bottom: 1rem;
+}
+
+.analytics-card p {
+  margin: 0.5rem 0;
+  color: #718096;
+}
+
+.progress-bar {
+  background: #edf2f7;
+  height: 10px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  background: linear-gradient(90deg, #667eea, #764ba2);
+  height: 100%;
+  transition: width 0.3s;
+}
+
+.insights {
+  background: linear-gradient(135deg, #f7fafc 0%, #edf2f7 100%);
+  padding: 2rem;
+  border-radius: 8px;
+  border-left: 4px solid #667eea;
+}
+
+.insight-positive {
+  color: #22543d;
+  background-color: #c6f6d5;
+  padding: 1rem;
+  border-radius: 6px;
+  margin: 0.5rem 0;
+}
+
+.insight-warning {
+  color: #742a2a;
+  background-color: #fed7d7;
+  padding: 1rem;
+  border-radius: 6px;
+  margin: 0.5rem 0;
+}
+
+.insight-info {
+  color: #2c5282;
+  background-color: #bee3f8;
+  padding: 1rem;
+  border-radius: 6px;
+  margin: 0.5rem 0;
+}

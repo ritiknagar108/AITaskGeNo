@@ -1,0 +1,162 @@
+.dashboard-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.dashboard-container h1 {
+  color: #2d3748;
+  margin-bottom: 2rem;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.stat-card {
+  padding: 1.5rem;
+  border-radius: 8px;
+  color: white;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.stat-card h3 {
+  margin: 0;
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.stat-card p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.stat-card.total {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.stat-card.completed {
+  background: linear-gradient(135deg, #48bb78 0%, #38a169 100%);
+}
+
+.stat-card.pending {
+  background: linear-gradient(135deg, #f6ad55 0%, #ed8936 100%);
+}
+
+.stat-card.in-progress {
+  background: linear-gradient(135deg, #4299e1 0%, #3182ce 100%);
+}
+
+.filters {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.filters button {
+  padding: 0.5rem 1rem;
+  border: 2px solid #cbd5e0;
+  background: white;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+.filters button.active {
+  background: #667eea;
+  color: white;
+  border-color: #667eea;
+}
+
+.filters button:hover {
+  border-color: #667eea;
+}
+
+.tasks-list {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.task-item {
+  padding: 1rem;
+  border-bottom: 1px solid #edf2f7;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.task-item:last-child {
+  border-bottom: none;
+}
+
+.task-item h3 {
+  margin: 0;
+  flex: 1;
+  color: #2d3748;
+}
+
+.task-item p {
+  margin: 0;
+  color: #718096;
+  flex: 1;
+  min-width: 200px;
+}
+
+.status, .priority {
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.status.pending {
+  background-color: #fef3c7;
+  color: #92400e;
+}
+
+.status.completed {
+  background-color: #c6f6d5;
+  color: #22543d;
+}
+
+.status.in-progress {
+  background-color: #bee3f8;
+  color: #2c5282;
+}
+
+.priority.low {
+  background-color: #c6f6d5;
+  color: #22543d;
+}
+
+.priority.medium {
+  background-color: #feebc8;
+  color: #7c2d12;
+}
+
+.priority.high {
+  background-color: #fed7d7;
+  color: #742a2a;
+}
+
+.empty-message {
+  text-align: center;
+  color: #718096;
+  padding: 2rem;
+}
+
+.empty-message a {
+  color: #667eea;
+  text-decoration: none;
+  font-weight: 600;
+}
