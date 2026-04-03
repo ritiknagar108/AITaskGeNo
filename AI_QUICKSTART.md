@@ -67,7 +67,7 @@ AI_PROVIDER=gemini
 Create `backend/.env`:
 
 ```env
-PORT=5000
+PORT=your_port
 NODE_ENV=development
 MONGO_URI=mongodb+srv://username:password@cluster.mongodb.net/ai-tasks-db
 JWT_SECRET=your_secret_key_here

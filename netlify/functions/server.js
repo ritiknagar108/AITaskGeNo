@@ -1,4 +1,5 @@
 const express = require('express');
+const serverless = require('serverless-http');
 const cors = require('cors');
 const dotenv = require('dotenv');
 const connectDB = require('./config/db');
@@ -33,5 +34,5 @@ if (require.main === module) {
   app.listen(PORT, () => console.log(`🚀 Server running on http://localhost:${PORT}`));
 }
 
-// Export for Vercel serverless
-module.exports = app;
+// Export for Netlify serverless
+module.exports.handler = serverless(app);

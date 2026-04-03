@@ -410,7 +410,7 @@ Output: Handled (validation + AI processing)
 
 ```env
 # Core
-PORT=5000
+PORT=your_port
 NODE_ENV=development
 
 # Database

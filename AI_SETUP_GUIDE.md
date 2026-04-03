@@ -25,7 +25,7 @@ Create a `.env` file in the `backend` directory and add:
 
 ```env
 # Server
-PORT=5000
+PORT=your_port
 NODE_ENV=development
 
 # Database

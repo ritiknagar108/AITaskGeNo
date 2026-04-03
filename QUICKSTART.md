@@ -11,9 +11,9 @@
 
 **Backend (.env file):**
 ```
-MONGO_URI=mongodb+srv://ritiknagar255:ritiknagar255@clustertechnotes.314ua.mongodb.net/?appName=Clustertechnotes
+MONGO_URI=your_mongodb_connection_string
 JWT_SECRET=your-secret-key-here
-PORT=5000
+PORT=your_port
 ```
 
 **Frontend (.env if needed):**
