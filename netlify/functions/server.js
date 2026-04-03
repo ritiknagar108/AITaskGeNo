@@ -6,6 +6,8 @@ const connectDB = require('./config/db');
 
 dotenv.config();
 
+console.log('Serverless function loaded');
+
 const app = express();
 
 // Connect to MongoDB
